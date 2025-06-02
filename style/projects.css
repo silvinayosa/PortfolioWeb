@@ -1,0 +1,247 @@
+/* Project Layout */
+.project-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px 80px;
+  }
+  
+  .project-main {
+    flex: 1;
+    min-width: 600px;
+  }
+  
+  /* Sidebar */
+  .project-sidebar {
+    width: 220px;
+    background-color: #fff5f2;
+    position: sticky;
+    padding: 20px;
+    top: 100px;
+    align-items: flex-start;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+    color: #5c3b36;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    height: fit-content;
+    z-index: 10;
+  }
+  
+  .project-sidebar.collapsed {
+    transform: translateX(-250px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+  }
+  
+  .project-sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #a26555;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group label {
+    font-weight: 600;
+    color: #b36e63;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .project-sidebar input[type="radio"] {
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+  
+  .project-sidebar select {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #5c3b36;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    accent-color: #b48b7d;
+  }
+  
+  .project-sidebar button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 16px;
+    background-color: #e3b8a5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+  }
+  
+  .project-sidebar button:hover {
+    background-color: #d69b86;
+  }
+  
+  /* Header */
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  
+  .project-header h2 {
+    font-size: 1.5rem;
+    color: #a26555;
+  }
+  
+  .project-header select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 0.9rem;
+    color: #5c3b36;
+  }
+  
+  /* Project Grid */
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding-top: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .project-img {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+  }
+  
+  .project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .project-status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e3b8a5;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  
+  .project-info {
+    padding: 14px 16px;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b36e63;
+    margin-bottom: 6px;
+  }
+  
+  .project-info p {
+    margin: 2px 0;
+    font-size: 0.9rem;
+    color: #5c3b36;
+  }
+  
+  /* Filter Button (Mobile Toggle) */
+  .filter-toggle {
+    display: inline-block;
+    background-color: #e3b8a5;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filter-toggle:hover {
+    background-color: #d69b86;
+  }
+  
+
+/* Responsive Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fff5f2;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #a26555;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+  color: #b36e63;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal-date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.modal-info p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #5c3b36;
+}
