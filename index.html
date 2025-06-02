@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">My Portfolio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="more.html">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section in Carousel Format -->
+    <section class="hero">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                      <img src="imgs/projectscarousel.png" alt="Project Illustration" class="carousel-img" />
+                      <a href="projects.html" class="carousel-btn">View My Projects</a>
+                    </div>
+                  </div>                  
+                <div class="carousel-item">Explore my projects</div>
+                <div class="carousel-item">Let's build something great!</div>
+            </div>
+            <div class="carousel-buttons">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie Chart Section -->
+    <section class="project-overview-section">
+        <h2 class="project-title">Project Overview</h2>
+        <div class="pie-chart-container">
+            <canvas id="skillsChart" width="500" height="420"></canvas>
+            <div class="chart-info-box">
+                <h3>Focus Areas</h3>
+                <ul>
+                    <li><strong>Machine Learning:</strong> AI projects, sustainability models</li>
+                    <li><strong>Data Analysis:</strong> Dashboards, surveys, Tableau</li>
+                    <li><strong>Algorithms:</strong> Optimization, pathfinding, CS fundamentals</li>
+                </ul>
+                <a href="projects.html" class="btn-explore">Explore More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Featured Projects Section -->
+    <hr class="section-divider" />
+    <section class="featured-projects">
+        <h2 class="section-heading">Featured Projects</h2>
+        <div class="featured-projects-grid">
+            <div class="project-card">
+                <img src="imgs/proj/co2proj.png" alt="Smart Event Planner thumbnail" class="project-thumbnail" />
+                <h3>Co2 Forecasting & Sustainable Event Planning</h3>
+                <p><strong>Lang:</strong> Python</p>
+                <p><strong>Date:</strong> 2023-08-14 to 2024-12-28</p>
+                <p><strong>Type:</strong> Machine Learning</p>
+                <a href="projects.html#6" class="btn-view">View Project</a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="imgs/proj/svmproj.png" alt="" class="project-thumbnail" />
+                <h3>Cardiovascular Disease Prediction - Using SVM</h3>
+                <p><strong>Lang:</strong> Python</p>
+                <p><strong>Date:</strong> 2023-10-12 to 2023-11-15</p>
+                <p><strong>Type:</strong> Machine Learning</p>
+                <a href="projects.html#2" class="btn-view">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quotes Section -->
+    <section class="quote-section">
+        <blockquote>
+            "Simplicity is the ultimate sophistication."
+            <span class="quote-author">— Leonardo da Vinci</span>
+        </blockquote>
+        <a href="others/resume.pdf" class="quote-contact-link" download>Check Out My CV!</a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://tw.linkedin.com/in/silvina-yosa-227651221" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+                        alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/silvinayosa" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
+                </a>
+                <a href="https://instagram.com/silvinayosa" target="_blank" aria-label="Instagram">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                        alt="Instagram" />
+                </a>
+            </div>
+            <div class="footer-credit">
+                <p>&copy; 2025 Silvina Yosa • Designed with love & logic 💻🌱</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
