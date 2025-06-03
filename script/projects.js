@@ -66,6 +66,17 @@ const projects = [
       image: "imgs/proj/co2proj.png",
       description: "This project focuses on forecasting CO2 emissions and planning sustainable events. It utilizes Python for data analysis and modeling to predict emissions and suggest eco-friendly event planning strategies."
     },
+    {
+      id: "7",
+      title: "Library Management System with OOP",
+      type: "Data Structures",
+      lang: "Python",
+      status: "Completed",
+      dateStart: "2024-11-01",
+      dateEnd: "2024-12-10",
+      image: "imgs/proj/libraryproj.png",
+      description:" This project focused on developing a digital library management system designed to streamline book tracking, borrowing activity, and user management."
+    },
   ];
 
   function displayProjects(filtered = projects) {
