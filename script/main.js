@@ -51,7 +51,7 @@ new Chart(ctx, {
   data: {
     labels: ['Machine Learning', 'Data Analysis', 'Algorithms'],
     datasets: [{
-      data: [33, 33, 34],
+      data: [28.57, 28.57, 42.86],
       backgroundColor: ['#f7cfc4', '#d6a692', '#a26555'],
       borderColor: '#fff',
       borderWidth: 2
